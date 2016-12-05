@@ -9,10 +9,13 @@ To develop end-to-end governance, you must be able to efficiently interact with 
 
 ## Building the application
 
-Use the magical button below to automatically deploy this sample application to Bluemix. 
+Create Use the magical button below to automatically deploy this sample application to Bluemix. 
 
-0. Click <a href="https://bluemix.net/deploy?repository=https://github.com/grassmik/governance-events" target="_blank"><img src="http://bluemix.net/deploy/button.png" alt="Bluemix button" /></a> to open the Deploy to Bluemix page.
-0. Log in to or sign up for Bluemix.
+0. On the system having Node.js installed, create a **myapp** directory to hold your application and make that you working directory.
+0. In your application directory, run the **npm init** command to create a package.json file for your application. This command prompts you for a number of things, such as the name and version of your application. You can simply hit RETURN to accept the defaults. The default name of your application is **index.js**. 
+0. Run the **npm install express --save** command to install Express in your application directory. Express is a minimal and flexible Node.js web application framework.
+0. Run the **npm install kafka-node --save** command to install kafka-node in your application directory. Kafka-node is a Node.js client for Apache Kafka. You can ignore any error messages regarding Python.
+0. Run the **npm install nodemailer --save** command to install nodemailer in your application directory. Nodemailer allows sending e-mails from Node.js with plaintext and HTML body.
 0. Name your new app and specify any options as needed if you do not like the defaults.
 0. Click DEPLOY.
 
