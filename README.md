@@ -20,4 +20,6 @@ Create Use the magical button below to automatically deploy this sample applicat
 
 ## Running the sample
 
-0. TODO
+0. From the myapp folder start your application: **node index.js**.
+0. Use the InfoSphere Information Analyzer thin client to analyze your data sets. See the [Analyzing data with InfoSphere Information Analyzer thin client] (http://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.5.0/com.ibm.swg.im.iis.ia.product.doc/topics/t_browser_client_container.html) page to learn how to add data sets and run a column analysis.
+0. Run the column analysis of your data set. When the analysis is finished, the “IA_DATAQUALITY_ANALYSIS_FINISHED_EVENT” event is generated and an according email is sent to the receiver mail account as defined in the index.js file.
