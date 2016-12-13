@@ -15,9 +15,12 @@ Create Use the magical button below to automatically deploy this sample applicat
 0. In your application directory, run the **npm init** command to create a package.json file for your application. This command prompts you for a number of things, such as the name and version of your application. You can simply hit RETURN to accept the defaults. The default name of your application is **index.js**. 
 0. Run the **npm install kafka-node --save** command to install kafka-node in your application directory. Kafka-node is a Node.js client for Apache Kafka. You can ignore any error messages regarding Python.
 0. Run the **npm install nodemailer --save** command to install nodemailer in your application directory. Nodemailer allows sending e-mails from Node.js with plaintext and HTML body.
+0. Run the **npm install nodemailer-wellknown** command to install nodemailer-wellknown in your application directory. Nodemailer-wellknown returns the SMPT configuration for about 35 popular mail services, like Gmail, Yahoo, AOL, Hotmail etc..
 0. Download the index.js file from the repository and copy it to your application directory
 0. Follow the instructions in the file (search for TODO) to specify/configure your IIS host name and the sender and receiver email accounts
 
 ## Running the sample
 
-0. TODO
+0. From the myapp folder start your application: **node index.js**.
+0. Use the InfoSphere Information Analyzer thin client to analyze your data sets. See the [Analyzing data with InfoSphere Information Analyzer thin client] (http://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.5.0/com.ibm.swg.im.iis.ia.product.doc/topics/t_browser_client_container.html) page to learn how to add data sets and run a column analysis.
+0. When the analysis is finished, the “IA_DATAQUALITY_ANALYSIS_FINISHED_EVENT” event is generated and an email is sent to the receiver mail account as defined in the index.js file.
